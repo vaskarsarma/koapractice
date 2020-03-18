@@ -10,17 +10,12 @@ app.listen(3000, () => {
 const Router = require('koa-router');
 
 const router = new Router();
-
-require('./routes/basic')({ router })
-
-const dogRouter= new Router({
+const dogRouter = new Router({
     prefix: '/dogs'
 });
 
-require('./routes/dogs')({
-    dogRouter
-});
-
+require('./routes/basic')({ router })
+require('./routes/dogs')({ dogRouter });
 
 const logger = require('koa-logger');
 
@@ -31,7 +26,7 @@ router.get('/', (ctx, next) => {
 });
 */
 
-app.use(async (ctx, next) => {
+app.use(async(ctx, next) => {
     try {
         await next();
     } catch (err) {

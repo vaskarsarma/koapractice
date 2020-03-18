@@ -1,7 +1,7 @@
 const request = require('supertest');
 const server = require('../app');
 
-beforeAll(async () => {
+beforeAll(async() => {
     console.log('Jest Starting');
 });
 
@@ -11,9 +11,17 @@ afterAll(() => {
 });
 
 describe('basic route tests', () => {
-    test('Test Get route', async () => {
+    test('Test Get route', async() => {
         const response = await request(server).get('/');
         expect(response.status).toEqual(200);
         expect(response.text).toContain(`Hello Vaskar Sarma!`);
     });
 });
+
+describe("dogs test", () => {
+    test(`Get all th dog name`, async() => {
+        const response = await request(server).get('/dogs');
+        expect(response.status).toEqual(200);
+        expect(response.text).toContain(`affenpinscher`);
+    })
+})
