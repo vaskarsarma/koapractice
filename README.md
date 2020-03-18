@@ -6,3 +6,11 @@ https://codeburst.io/lets-build-an-api-with-koa-part-2-34d943e900a1
 https://medium.com/the-node-js-collection/debugging-node-js-with-google-chrome-4965b5f910f4
 
 https://flaviocopes.com/jest/
+
+https://www.npmjs.com/package/koa-body
+https://github.com/koajs/koa/issues/719
+
+https://egghead.io/lessons/javascript-track-project-code-coverage-with-jest
+
+https://www.valentinog.com/blog/jest/ - to read
+
