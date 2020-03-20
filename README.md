@@ -14,3 +14,6 @@ https://egghead.io/lessons/javascript-track-project-code-coverage-with-jest
 
 https://www.valentinog.com/blog/jest/ - to read
 
+Branch Coverage 
+https://www.ncover.com/support/docs/extras/code-coverage/understanding-branch-coverage
+
